@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BrightStack IT — One‑Page Flyer</title>
+  <meta name="description" content="Printable flyer for BrightStack IT: small office IT, VoIP, gaming PCs, cloud & backup, cybersecurity.">
+  <style>
+    /* Simple, print‑friendly flyer styles (Letter/A4) */
+    :root {
+      --ink: #0b1320;
+      --accent: #2563eb;
+      --muted: #475569;
+      --divider: #e5e7eb;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0; color: var(--ink); background: #ffffff; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height: 1.5; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    }
+    .page { width: 100%; max-width: 900px; margin: 0 auto; padding: 32px 24px; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 2px solid var(--divider); padding-bottom: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; }
+    .brand img { width: 36px; height: 36px; }
+    .brand span { font-weight: 800; font-size: 22px; letter-spacing: .2px; }
+    .contact { text-align: right; font-size: 14px; color: var(--muted); }
+    .contact a { color: var(--ink); text-decoration: none; }
+
+    .hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; padding: 18px 0 12px; align-items: center; }
+    h1 { font-size: 34px; line-height: 1.15; margin: 10px 0 8px; }
+    .subtitle { margin: 0; color: var(--muted); }
+    .badgebar { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+    .badge { border: 1px solid var(--divider); padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+
+    .panel { border: 1px solid var(--divider); border-radius: 12px; padding: 14px; }
+    .section-title { margin: 0 0 10px; font-size: 20px; }
+
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .card { border: 1px solid var(--divider); border-radius: 12px; padding: 14px; }
+    .card h3 { margin: 6px 0 4px; font-size: 18px; }
+    .card p { margin: 0; font-size: 14px; color: var(--muted); }
+    .check { list-style: none; padding: 0; margin: 8px 0 0; }
+    .check li { margin: 6px 0; padding-left: 22px; position: relative; }
+    .check li::before { content: "✓"; position: absolute; left: 0; color: #16a34a; font-weight: 800; }
+
+    .cta { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 14px; align-items: center; }
+    .cta .callout { border: 2px solid var(--accent); border-radius: 12px; padding: 14px; }
+    .cta strong { display: block; font-size: 18px; }
+
+    footer { margin-top: 18px; padding-top: 12px; border-top: 1px dashed var(--divider); font-size: 13px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; }
+    .qr { display: grid; place-items: center; text-align: center; }
+    .qr small { color: var(--muted); }
+
+    /* Simple QR-like placeholder box (replace with your real QR image if desired) */
+    .qr-box { width: 88px; height: 88px; border: 2px solid var(--ink); border-radius: 6px; display: grid; place-items: center; font-weight: 800; color: var(--ink); }
+
+    @media (max-width: 800px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr 1fr; } .cta { grid-template-columns: 1fr; } header { flex-direction: column; align-items: flex-start; } .contact { text-align: left; } }
+
+    @page { margin: 18mm; }
+    @media print {
+      body { background: #fff; }
+      a { color: inherit; text-decoration: none; }
+      .badge { border-color: #cbd5e1; }
+      .card, .panel { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo.svg" alt="BrightStack IT logo">
+        <span>BrightStack IT</span>
+      </a>
+      <div class="contact">
+        <div><a href="mailto:hello@brightstack.it">hello@brightstack.it</a></div>
+        <div><a href="tel:+1234567890">+1 (234) 567‑890</a></div>
+        <div>Small Business IT & Gaming PC Specialists</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>IT that just works for small offices and power users</h1>
+        <p class="subtitle">Networking, managed IT, VoIP, cloud & backup, and custom gaming PCs — set up and supported by real humans.</p>
+        <div class="badgebar">
+          <span class="badge">Office networking & Wi‑Fi</span>
+          <span class="badge">VoIP phone systems</span>
+          <span class="badge">Custom gaming PCs</span>
+          <span class="badge">Cloud & backup</span>
+          <span class="badge">Cybersecurity</span>
+        </div>
+      </div>
+      <div class="panel">
+        <h3 class="section-title">Why choose us</h3>
+        <ul class="check">
+          <li>Plain‑English help from certified technicians</li>
+          <li>Right‑sized solutions for small teams and home offices</li>
+          <li>Local onsite help + fast remote support</li>
+          <li>Transparent pricing, no surprise fees</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Small Office IT</h3>
+          <p>Networks, Wi‑Fi, file sharing, printers, managed updates.</p>
+        </div>
+        <div class="card">
+          <h3>Home & Individuals</h3>
+          <p>Reliable setups for remote work and personal rigs.</p>
+        </div>
+        <div class="card">
+          <h3>Custom Gaming PCs</h3>
+          <p>Quiet, cool builds tuned for your favorite titles.</p>
+        </div>
+        <div class="card">
+          <h3>VoIP Phone</h3>
+          <p>Cloud phone systems, call menus, and headsets.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud & Backup</h3>
+          <p>Microsoft 365/Google Workspace, backup, recovery.</p>
+        </div>
+        <div class="card">
+          <h3>Cybersecurity</h3>
+          <p>Endpoint protection, MFA, policies, phishing training.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="callout">
+          <strong>Call us:</strong>
+          <div><a href="tel:+1234567890">+1 (234) 567‑890</a></div>
+          <strong style="margin-top:8px">Email:</strong>
+          <div><a href="mailto:hello@brightstack.it">hello@brightstack.it</a></div>
+        </div>
+        <div class="qr">
+          <div class="qr-box">QR</div>
+          <small>Scan to visit: brightstack.it or open index.html</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> BrightStack IT</span>
+      <span>Serving local businesses and home offices</span>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+</html>
